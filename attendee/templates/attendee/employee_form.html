@@ -1,0 +1,65 @@
+{% extends 'layouts/default/logged.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1><small></small></h1>
+      <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/">Employee</a></li>
+        </ol>
+    </section>
+
+<section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Employee</h3>
+            </div>
+            <!-- /.box-header -->
+
+<form method="POST" enctype="multipart/form-data">{% csrf_token %}
+    {{ form.as_p }}
+    <input  class="btn btn-primary" type="submit" value="Submit" />
+</form>
+
+          </div>
+          <!-- /.box -->
+      </div>
+  </div>
+</section>
+<script type="text/javascript">
+  $(document).ready(function() {
+  var selectedBranch=$('#id_branch').val();
+      $.ajax({
+        url: "/attendee/employee/ajax_load_branches",
+        data:{sc:selectedBranch},
+        success: function (data) {
+          $("#id_branch").html(data);
+          //alert(data);
+        }
+      });
+          $('.selectbox').select2();
+
+  var selectedhierarchy=$('#id_shifttime').val();
+      $.ajax({
+        url: "/hierarchy/ajax_load_shifttime",
+        data:{sh:selectedhierarchy},
+        success: function (data) {
+          $("#id_shifttime").html(data);
+           alert(data);
+        }
+      });
+          $('.selectbox').select2();
+	  
+
+});
+</script>
+{% endblock %}

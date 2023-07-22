@@ -1,0 +1,122 @@
+{% extends 'layouts/default/page.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+{% load static %} 
+<style>
+
+.wrapper-1{
+ height: initial;
+    max-width: 620px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 4px 8px 40px 8px rgba(162, 162, 162, 0.2);
+}
+.wrapper-2{
+      padding: 60px;
+    text-align: center;
+}
+h1{
+    
+    font-size: 4em;
+    letter-spacing: 3px;
+    color: #5892FF;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Roboto,sans-serif;
+
+}
+.wrapper-2 h4 {
+    margin: 0;
+    font-size: 1.3em;
+    margin-bottom: 14px;
+    color: #3e3e3e;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+}
+.wrapper-2 p {
+    margin: 0;
+    color: #5f5f5f;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+	
+.go-home{
+    color: #fff!important;
+    background: #203391;
+    border: none;
+    padding: 10px 50px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-transform: capitalize;
+    box-shadow: 4px 8px 40px 8px rgba(195, 195, 195, 0.2);
+    POSITION: relative;
+    TOP: 27PX;
+    font-size: 18px;
+}
+
+/*logo*/
+  .bg-login {
+     background: #232F3E;
+     width: 100%;
+     padding: 25px 0px 25px 0px;
+     text-align: center !important;
+  }
+
+
+@media (min-width:360px){
+  h1{
+       font-size: 33px;
+  }
+  .go-home{
+    margin-bottom:20px;
+  }
+}
+
+@media (min-width:600px){
+  .content{
+  max-width:1000px;
+  margin:0 auto;
+}
+  .wrapper-1{
+  height: initial;
+  max-width:620px;
+  margin:0 auto;
+  margin-top:100px;
+     box-shadow: 4px 8px 40px 8px rgba(195, 195, 195, 0.2);
+}
+  
+}
+
+</style>
+
+
+<div class="content">
+  <div class="wrapper-1">
+    <div class="wrapper-2">
+    {% if request.user.is_authenticated %}
+
+<p>You Are Logged In... Go to your  <a href="{% url 'accounts:dashboard_index' %}"> <i class="fa fa-tachometer"></i> Dashboard</a></p>
+   {% else %}
+<div class="bg-login">
+    <img src="{% static 'admin/dist/img/radiant-logo.png' %}">
+</div>
+<h1>Welcome to RadiantHRMS.</h1>
+<h4>Login and  Enjoy Services...Cheers!!!<i class='fa fa-smile-o'></i></h4>
+   {% endif %}
+
+	<a class="go-home" href="{% url 'accounts:log_in' %}"> <i class="fa fa-sign-in"></i> Login</a>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+{% endblock %}

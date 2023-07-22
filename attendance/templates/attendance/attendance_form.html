@@ -1,0 +1,58 @@
+{% extends 'layouts/default/logged.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1><small></small></h1>
+      <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/">{{usertype}}</a></li>
+        </ol>
+    </section>
+
+<section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">{{usertype}} Attendance</h3>
+                <input type="hidden" value="{{usertype}}" name="usertype" id="usertype">
+            </div>
+              <form type="get" action="." style="margin: 0">
+               <input  id="search_box" type="text" name="search_box"  placeholder="Search..." >
+                <button id="search_submit" type="submit" >Submit</button>
+             </form>
+            <!-- /.box-header -->
+
+<form method="POST">{% csrf_token %}
+    {{ form.as_p }}
+    <input  class="btn btn-primary" type="submit" value="Submit" />
+</form>
+
+          </div>
+          <!-- /.box -->
+      </div>
+  </div>
+</section>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var usertype=$('#usertype').val();
+   var selectedUser=$('#id_user').val();
+      $.ajax({
+        url: "/attendance/employees/ajax_load_employees",
+        data:{su:selectedUser,usertype:usertype},
+        success: function (data) {
+          $("#id_user").html(data);
+          //alert(data);
+        }
+      });
+    $('.selectbox').select2();
+});
+</script>
+{% endblock %}

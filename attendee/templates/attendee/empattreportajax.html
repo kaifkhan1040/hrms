@@ -1,0 +1,110 @@
+{% if no_data %}
+<div class="col-sm-3" style="padding-left: 0px;">
+    <p>No Record Found</p>
+</div>
+{% else %}
+<div class="col-sm-3" style="padding-left: 0px;">
+		<table class="table table-bordered" style="    background: #f7f6f6;" >
+    <thead>
+      <tr></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Daily Avg Minutes:</td>
+        <td> {{dailyavg}}</td>
+       
+      </tr>
+      <tr>
+        <td>Total Late Comings:</td>
+        <td>{{totallatecomings}}</td>
+       
+      </tr>
+   
+    </tbody>
+  </table>
+</div>
+
+<div class="col-sm-3" style="padding-left: 0px;">
+		<table class="table table-bordered" style="background: #f7f6f6;" >
+    <thead>
+      <tr></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Total Working Days:</td>
+        <td> {{totalworkingdays}}</td>
+      </tr>
+      <tr>
+        <td>Total Present Days:</td>
+        <td>{{totalpresent}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="col-sm-3" style="padding-left: 0px;">
+		<table class="table table-bordered" style="    background: #f7f6f6;" >
+    <thead>
+      <tr></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Total Absent Days:</td>
+        <td> {{totalabsent}}</td></tr>
+      <tr>
+        <td>Total Week Offs:</td>
+        <td>{{totalweekoffs}}</td>
+      </tr></tbody>
+  </table>
+</div>
+<div class="col-sm-3" style="padding-left: 0px;">
+		<table class="table table-bordered" style="    background: #f7f6f6;" >
+    <thead>
+      <tr></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Total Short / Extra Minutes:</td>
+        <td> {{totalshortadditional}}</td></tr>
+      <tr>
+        <td>Total Holidays:</td>
+        <td>{{totalholidays}}</td>
+      </tr></tbody>
+  </table>
+</div>
+
+<table id="mytable" class="table table-responsive ">
+    <thead>
+    <th>Date</th>
+    <th>In</th>
+    <th>Out</th>
+    <th>Minutes On Floor</th>
+    <th>Short / Additional Minutes</th>
+    <th>On Time</th>
+    <th>Current Location(punch-In)</th>
+    <th>Current Location(punch-Out)</th>
+
+    </thead>
+    <tbody>
+
+    {% for indx,dt in usrAttendance.items %}
+    <tr>
+<!--
+        {% for type,val in dt.items %}
+-->
+            {% if val == 'No' %}
+            <td><p style="color:red">{{val}}</p></td>
+            {% elif val == 'Yes' %}
+            <td><p style="color:green">{{val}}</p></td>
+            {% else %}
+            <td>{{val}}</td>
+            {% endif %}
+<!--
+            <td>{{val}}</td>
+
+        {% endfor %}
+-->
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+{% endif %}

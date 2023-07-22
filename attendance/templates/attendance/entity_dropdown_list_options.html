@@ -1,0 +1,4 @@
+<option value="">---------</option>
+{% for ent in entities %}
+<option value="{{ ent.user_id }}" {% if ent.user_id == selectedItem %}selected="selected"{% endif %}>{{ ent.first_name }}{{ ent.last_name }}</option>
+{% endfor %}

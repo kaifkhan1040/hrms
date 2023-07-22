@@ -1,0 +1,788 @@
+0900
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-01' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-02' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-03' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-04' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-05' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-06' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-07' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-08' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-09' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-10' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-11' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-12' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-13' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-14' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-15' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-16' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-17' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-18' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-19' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-20' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-21' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-22' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-23' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-24' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-25' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-26' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-27' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-28' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-29' and user_id='62' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-30' and user_id='62' order by event_hh,event_mm limit 1>
+Internal Server Error: /leave/empleaverequest/add
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/leave/views.py", line 98, in form_valid
+    available = form.cleaned_data.get('leavetype').available_days
+AttributeError: 'NoneType' object has no attribute 'available_days'
+"POST /leave/empleaverequest/add HTTP/1.1" 500 110319
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+Internal Server Error: /leave/myempleaverequest/
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1054, "Unknown column 'leave_empleaverequest.apply_1' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1151, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'leave_empleaverequest.apply_1' in 'field list'")
+"GET /leave/myempleaverequest/ HTTP/1.1" 500 251867
+Internal Server Error: /attendee/employee/
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/attendee/views.py", line 62, in dispatch
+    return super(EmployeeListView, self).dispatch(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/attendee/views.py", line 58, in get_queryset
+    employee_list = accessible_employeelist(self.request, a)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/attendee/views.py", line 547, in accessible_employeelist
+    adminaccessfor = request.session['adminfor']
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py", line 64, in __getitem__
+    return self._session[key]
+KeyError: 'adminfor'
+"GET /attendee/employee/?page=12 HTTP/1.1" 500 125057
+Internal Server Error: /attendee/employee/
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/attendee/views.py", line 62, in dispatch
+    return super(EmployeeListView, self).dispatch(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/attendee/views.py", line 58, in get_queryset
+    employee_list = accessible_employeelist(self.request, a)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/attendee/views.py", line 547, in accessible_employeelist
+    adminaccessfor = request.session['adminfor']
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py", line 64, in __getitem__
+    return self._session[key]
+KeyError: 'adminfor'
+"GET /attendee/employee/?page=12 HTTP/1.1" 500 124860
+Internal Server Error: /leave/myempleaverequest/
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1054, "Unknown column 'leave_empleaverequest.apply_1' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/template/defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1151, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/MySQLdb/connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'leave_empleaverequest.apply_1' in 'field list'")
+"GET /leave/myempleaverequest/ HTTP/1.1" 500 251111
+0900
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-01' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-02' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+15 : 42
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-03' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+None
+10 : 5
+None
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-04' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-05' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+None
+10 : 5
+None
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-06' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-07' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-08' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-09' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+18 : 36
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-10' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-11' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-12' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-13' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-14' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-15' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-16' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-17' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+12 : 53
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-18' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+10 : 46
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-19' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Qutab Golf Course, Basant Kaur Marg, Bhavishya Nidhi Enclave, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India
+18 : 49
+Qutab Golf Course, Basant Kaur Marg, Bhavishya Nidhi Enclave, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-20' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-21' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-22' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-23' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-24' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-25' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-26' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-27' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-28' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-29' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-30' and user_id='133' order by event_hh,event_mm limit 1>
+<QuerySet [<Branch: Radiant Delhi>]>
+<QuerySet [<Branch: Radiant Delhi>]>
+Nipa
+2
+admin
+fr
+adminaccessforId
+1
+Internal Server Error: /leave/leavebalance/
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/leave/views.py", line 330, in dispatch
+    return super(LeaveBalanceListView, self).dispatch(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/leave/views.py", line 323, in get_queryset
+    leavebalance_list = accessible_leavebalance(self.request, a)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/leave/views.py", line 428, in accessible_leavebalance
+    elif adminaccessfor == 'fr' and adminaccessforID == eid.branch_id:
+NameError: name 'adminaccessforID' is not defined
+"GET /leave/leavebalance/ HTTP/1.1" 500 121520
+0900
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-01' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-02' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+15 : 42
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-03' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+None
+10 : 5
+None
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-04' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-05' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+None
+10 : 5
+None
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-06' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-07' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-08' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-09' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+18 : 36
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-10' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-11' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-12' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-13' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-14' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-15' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-16' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-17' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+12 : 53
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-18' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+10 : 46
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-19' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Qutab Golf Course, Basant Kaur Marg, Bhavishya Nidhi Enclave, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India
+18 : 49
+Qutab Golf Course, Basant Kaur Marg, Bhavishya Nidhi Enclave, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-20' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-21' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-22' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-23' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-24' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-25' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-26' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-27' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-28' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-29' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-30' and user_id='133' order by event_hh,event_mm limit 1>
+0900
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-01' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-02' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+15 : 42
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-03' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+None
+10 : 5
+None
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-04' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-05' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+None
+10 : 5
+None
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-06' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-07' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-08' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-09' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+18 : 36
+Sector 1, Ramakrishna Puram, New Delhi, Vasant Vihar Tehsil, Delhi, 110066, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-10' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-11' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-12' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-13' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-14' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-15' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-16' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-17' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+12 : 53
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-18' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+10 : 46
+North Moti Bagh, New Delhi, Delhi Cantonment, Delhi, 110021, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-19' and user_id='133' order by event_hh,event_mm limit 1>
+sweety
+Qutab Golf Course, Basant Kaur Marg, Bhavishya Nidhi Enclave, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India
+18 : 49
+Qutab Golf Course, Basant Kaur Marg, Bhavishya Nidhi Enclave, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-20' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-21' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-22' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-23' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-24' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-25' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-26' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-27' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-28' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-29' and user_id='133' order by event_hh,event_mm limit 1>
+<RawQuerySet: SELECT id,user_id,fordate,address as ads, event_hh as eh,event_mm as em,event_ss as es FROM attendance_attendance where fordate='2020-11-30' and user_id='133' order by event_hh,event_mm limit 1>
+Internal Server Error: /hierarchy/organisation/
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/hierarchy/views.py", line 44, in dispatch
+    return super(OrganisationListView, self).dispatch(*args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/hierarchy/views.py", line 40, in get_queryset
+    organisation_list = accessible_organisationlist(self.request, a)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/hierarchy/views.py", line 943, in accessible_organisationlist
+    adminaccessfor = request.session['adminfor']
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py", line 64, in __getitem__
+    return self._session[key]
+KeyError: 'adminfor'
+"GET /hierarchy/organisation/ HTTP/1.1" 500 125005
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+Internal Server Error: /hierarchy/ajax_load_waivertype
+Traceback (most recent call last):
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/hierarchy/views.py", line 988, in load_waivertype
+    waivertype = accessible_waivertype(request, '')
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/env38/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/html/hrmsrad_test/radiant/hrmsrad/hierarchy/views.py", line 919, in accessible_waivertype
+    return waivertype_list
+UnboundLocalError: local variable 'waivertype_list' referenced before assignment
+"GET /hierarchy/ajax_load_waivertype?sw= HTTP/1.1" 500 17626
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList
+admin
+False
+adminaccessforId
+False
+<QuerySet [<LeaveBalance: LeaveBalance object (20)>, <LeaveBalance: LeaveBalance object (19)>, <LeaveBalance: LeaveBalance object (18)>, <LeaveBalance: LeaveBalance object (17)>, <LeaveBalance: LeaveBalance object (12)>, <LeaveBalance: LeaveBalance object (11)>, <LeaveBalance: LeaveBalance object (10)>, <LeaveBalance: LeaveBalance object (9)>, <LeaveBalance: LeaveBalance object (6)>, <LeaveBalance: LeaveBalance object (4)>, <LeaveBalance: LeaveBalance object (2)>, <LeaveBalance: LeaveBalance object (1)>]>
+LeaveList

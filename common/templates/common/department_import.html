@@ -1,0 +1,56 @@
+{% extends 'layouts/default/logged.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        <small></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Department</a></li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="box">
+             <div class="box-header with-border">
+              <h2 class="box-title">Department Import</h2>
+                 <a href="{% static 'data/format_department.csv' %}" >
+                <i class="fa fa-download"></i> Download Format
+              </a>
+
+              <a href="{% url 'common:department_create' %}" class="btn  btn-block btn-social btn-success ">
+                <i class="fa fa-plus"></i> Add Department
+              </a>
+              <a style="float: right;margin-right: 1%;" href="{% url 'common:export_department' %}" class="btn btn-sm btn-success">Export Data
+              </a>
+            </div>
+
+            <!-- /.box-header -->
+            <div class="box-body">
+                 <form  method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input  type="file" name="myfile">
+    <button  type="submit" class="btn btn-primary">Upload</button>
+  </form>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+{% endblock %}

@@ -1,0 +1,4 @@
+<option value="">---------</option>
+{% for cen in branches %}
+<option value="{{ cen.pk }}" {% if cen.pk == selectedItem %}selected="selected"{% endif %}>{{ cen.name }} ({{ cen.organisation.name }})</option>
+{% endfor %}

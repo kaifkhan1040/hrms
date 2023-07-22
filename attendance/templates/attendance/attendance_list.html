@@ -1,0 +1,220 @@
+{% extends 'layouts/default/logged.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        <small></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Employee</a></li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="box">
+               {% if usertype == 'Employee' %}
+             <div class="box-header with-border">
+              <h2 class="box-title">{{usertype}} Attendance List</h2>
+                 <a style="float: right;margin-right: 1%;" href="{% url 'attendance:import_employeeattendance' %}" class="btn btn-sm btn-success">Import Attendance
+              </a>
+                <!-- <a style="float: right;margin-right: 1%;" href="#" id="exporemptatt" class="btn btn-sm btn-success">Export Attendance
+              </a>  -->
+            </div>
+              {% endif %}
+               {% if usertype == 'Student' %}
+              <div class="box-header with-border">
+              <h2 class="box-title">{{usertype}} Attendance List</h2>
+                 <a style="float: right;margin-right: 1%;" href="{% url 'attendance:import_studentattendance' %}" class="btn btn-sm btn-success">Import Attendance
+              </a>
+                 <a style="float: right;margin-right: 1%;" href="{% url 'attendance:export_studentattendance' %}" id="exporstutatt" class="btn btn-sm btn-success">Export Attendance
+              </a>
+
+            </div>
+                {% endif %}
+            <!-- /.box-header -->
+            <div class="box-body">
+               {# Employee Search Form #}
+<div class="row">
+        <div class="col-md-9 col-md-offset-1">
+                <div class="form-group has-feedback">
+                    <div class="row">
+                        <div class="col-md-2">
+            		<select id="selbranch" name="selbranch" class=" form-control select2"><option value="{{ request.GET.selbranch }}">Select Branch</option></select>
+            	    </div>
+                        <div class="col-md-3">
+            		<input type="text"  class="form-control" name="usersnamelike" id="usersnamelike" value="{{ request.GET.usersnamelike }}" autocomplete="off" placeholder="Search by Name">
+            	    </div>
+                        <div class="col-md-3">
+                            <input type="hidden" id="usertypes" value="{{usertype}}">
+            		<input type="text"  class="form-control datepicker" name="searchdate1" id="searchdate1" value="{{ request.GET.searchdate1 }}" autocomplete="off" placeholder="From Date">
+            	    </div>
+                         <div class="col-md-3">
+            		<input type="text"  class="form-control datepicker" name="searchdate2" id="searchdate2" value="{{ request.GET.searchdate2 }}" autocomplete="off" placeholder="To Date">
+            	    </div><div class="col-md-1">
+                        <button class="btn btn-primary" id="getdatedata">Search</button>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+              <table id="memListTables" class="display table table-bordered table-striped" style="width:100%; display:none;">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>User Name</th>
+            <th>Email Id</th>
+            <th>Date</th>
+            <th>InTime</th>
+            <th>OutTime</th>
+            <th>Lattitude</th>
+            <th>Longitude</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+                  <tbody>
+        {% for co in my_user_list %}
+        <tr>
+
+            <td>{{ forloop.counter }}</td>
+            <td>{{co.user.first_name}} {{co.user.last_name}}</td>
+            <td>{{co.user.email}}</td>
+            <td>{{co.fordate}}</td>
+            <td>{{co.intime_hh}}:{{co.intime_mm}}</td>
+            <td>{{co.outtime_hh}}:{{co.outtime_mm}}</td>
+            <td>{{co.lattitude}}</td>
+            <td>{{co.longitude}}</td>
+            {% if usertype == 'Employee' %}
+            <td><a href="{% url 'attendance:employees_edit' co.id %}"><i class="fa fa-pencil" style="color:green"></i></a> |
+    <a onclick="return confirm('Are You sure about this!!')" href="{% url 'attendance:employees_delete' co.id %}"><i class="fa fa-trash" style="color:red"></i></a></td>
+            {% endif %}
+             {% if usertype == 'Student' %}
+            <td><a href="{% url 'attendance:students_edit' co.id %}"><i class="fa fa-pencil" style="color:green"></i></a> |
+    <a onclick="return confirm('Are You sure about this!!')" href="{% url 'attendance:students_delete' co.id %}"><i class="fa fa-trash" style="color:red"></i></a></td>
+            {% endif %}<td></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    var catid;
+    today=new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+    if(dd<10)
+    {
+    dd='0'+dd;
+    }
+    if(mm<10)
+    {
+    mm='0'+mm;
+    }
+    todaydate = yyyy+'-'+mm+'-'+dd;
+    usertypes=$('#usertypes').val();
+    fetchData(todaydate,todaydate,'',usertypes,'','',1);
+    $('.datepicker').datepicker({
+    format: 'yyyy-mm-dd',
+    endDate: '+0d'});
+
+    var selectedBranch=$('#selbranch').val();
+      $.ajax({
+        url: "/attendee/employee/ajax_load_branches",
+        data:{sc:selectedBranch},
+        success: function (data) {
+          $("#selbranch").html(data);
+          //alert(data);
+        }
+      });
+
+    $('.select2').select2();
+});
+
+$('#getdatedata').click(function(){
+fdate=$('#searchdate1').val();
+tdate=$('#searchdate2').val();
+usertypes=$('#usertypes').val();
+usersnamelike=$('#usersnamelike').val();
+selbranch=$('#selbranch').val();
+
+
+fetchData(fdate,tdate,'',usertypes,usersnamelike,selbranch,1);
+});
+function fetchData(fromdate,todate,email=null,usertypes,usersnamelike,selbranch,page=1){
+$('#memListTables').html('<img src="/static/admin/dist/img/loading.gif" style="margin: 0% 0% 0% 27%;" class="user-image" width="250px;" alt="Radiant Loader">');
+
+$.ajax(
+    {
+        type:"GET",
+        url: "/attendance/ajaxlist",
+        data:{
+                 fromdate: fromdate,
+                 todate: todate,
+                 aemail: email,
+                 utype:usertypes,
+                 usersnamelike:usersnamelike,
+                 selbranch:selbranch,
+        },
+        success: function( data )
+        {
+         setTimeout(function(){
+            $( '#memListTables' ).show();
+            $( '#memListTables' ).html(data); }, 600);
+
+        }
+     })
+}
+
+$('#exporemptatt').click(function(){
+fdate=$('#searchdate1').val();
+tdate=$('#searchdate2').val();
+usersnamelike=$('#usersnamelike').val();
+selbranch=$('#selbranch').val();
+var hrefstr='';
+
+hrefstr='fdate='+fdate+'&tdate='+tdate;
+hrefstr+='&usersnamelike='+usersnamelike;
+hrefstr+='&selbranch='+selbranch;
+
+window.location.href='/attendance/export-employeeattendance?'+hrefstr;
+});
+
+$('#exporstutatt').click(function(){
+fdate=$('#searchdate1').val();
+tdate=$('#searchdate2').val();
+usersnamelike=$('#usersnamelike').val();
+selbranch=$('#selbranch').val();
+var hrefstr='';
+
+hrefstr='fdate='+fdate+'&tdate='+tdate;
+hrefstr+='&usersnamelike='+usersnamelike;
+hrefstr+='&selbranch='+selbranch;
+
+window.location.href='/attendance/export-studentattendance?'+hrefstr;
+});
+
+</script>
+{% endblock %}

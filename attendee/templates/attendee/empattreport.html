@@ -1,0 +1,135 @@
+{% extends 'layouts/default/logged.html' %}
+{% load bootstrap4 %}
+{% load i18n %}
+{% block content %}
+ <!-- Content Header (Page header) -->
+
+
+<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+
+#customers tr:hover {background: whitesmoke;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+}
+
+	 .box-title {
+    display: inline-block;
+    font-size: 24px !important;
+    margin: 0;
+    line-height: 1;
+}
+	
+	
+.box-title  input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 10px 23px !important;
+    /* position: relative; */
+    margin-left: 25px !important;
+}
+
+</style>
+
+<div id="customers">
+    <section class="content-header">
+      <h1>
+        <small></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Attendance Report</a></li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+
+          <div class="box">
+             <div class="box-header with-border">
+              <h2 class="box-title">Attendance Report</h2>
+                 <select onchange="fetchAttendance();" name="month" id="month">
+                     <option>Month</option>
+                     <option value="1">January</option>
+                      <option value="2">February</option>
+                      <option value="3">March</option>
+                      <option value="4">April</option>
+                      <option value="5">May</option>
+                      <option value="6">June</option>
+                      <option value="7">July</option>
+                      <option value="8">August</option>
+                      <option value="9">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                     <option value="12">December</option>
+                 </select>
+
+                 <select onchange="fetchAttendance();" name="year" id="year">
+                     <option>Year</option>
+                     <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                 </select>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+            <!-- /.box-body -->
+              <div id="ajaxDiv">
+
+              </div></div>
+          </div>
+          <!-- /.box -->
+      
+      <!-- /.row -->
+    </section>
+</div>
+    <!-- /.content -->
+<script>
+$(document).ready(function(){
+
+var d = new Date();
+    n1 = d.getMonth();
+    n=n1+1;
+    y = d.getFullYear();
+
+$('#month option:eq('+n+')').prop('selected', true);
+$('#year option[value="'+y+'"]').prop('selected', true);
+fetchAttendance();
+});
+
+function fetchAttendance(){
+foryear=$('#year').val();
+formonth=$('#month').val();
+$('#ajaxDiv').html('<img src="/static/admin/dist/img/loading.gif" style="margin: 0% 0% 0% 38%;" class="user-image" width="150px;" alt="Radiant Loader">');
+$.ajax({
+        type:"POST",
+        url: "/attendee/empattreportajax/",
+        data:{ formonth:formonth,
+                foryear:foryear},
+        success: function( data )
+        {
+          //console.log(data);
+         setTimeout(function(){ $('#ajaxDiv').html(data); }, 200);
+        }
+      });
+}
+</script>
+{% endblock %}

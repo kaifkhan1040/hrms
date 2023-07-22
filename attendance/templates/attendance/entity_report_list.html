@@ -1,0 +1,269 @@
+{% extends 'layouts/default/logged.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        <small></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Employee</a></li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="box">
+             <!-- /.box-header -->
+            <div class="box-body">
+               {# Employee Search Form #}
+<div class="row">
+        <div class="col-md-12 col-md-offset-1">
+                <div class="form-group has-feedback">
+                    <div class="row">
+                        <!--<div class="col-md-2">
+            		<select id="selbranch" name="selbranch" class=" form-control select2"><option value="{{ request.GET.selbranch }}">Select Branch</option></select>
+            	    </div>-->
+                        <div class="col-md-2">
+            		<select id="selshifttime" name="selshifttime" class=" form-control select2"><option value="{{ request.GET.selshifttime }}">Select Shifttime</option></select>
+            	    </div>
+                        <div class="col-md-2">
+            		    <select  name="usertypes" onchange="return setEmployee(this.value);" id="usertypes" class="form-control">
+
+                            <option value="Employee">Employee</option>
+                             {% if request.session.is_studentrole_needed %}
+                            <option value="Student">Student</option>
+                            {% endif %}
+                        </select>
+            	    </div>
+
+                    <div style="display:none;" id="selemployeediv"  class="col-md-2">
+            		<select id="selemployee" name="selemployee" class=" form-control select2"><option value="{{ request.GET.selemployee }}">Select Employee</option></select>
+            	    </div>
+
+                    <div style="display:none;" id="selbatchdiv"  class="col-md-2">
+            		<select id="selbatch" name="selbatch" class=" form-control select2"><option value="{{ request.GET.selbatch }}">Select Batch</option></select>
+            	    </div>
+
+
+
+
+                        <div class="col-md-2">
+            		<input type="text"  class="form-control datepicker" name="searchdate1" id="searchdate1" value="{{ request.GET.searchdate1 }}" autocomplete="off" placeholder="From Date">
+            	    </div>
+                         <div class="col-md-2">
+            		<input type="text"  class="form-control datepicker" name="searchdate2" id="searchdate2" value="{{ request.GET.searchdate2 }}" autocomplete="off" placeholder="To Date">
+            	    </div><div class="col-md-1">
+                       <button class="btn btn-primary" id="getdatedata">Search</button>
+
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+                <h2 class="page-header"><span id="utypespan"></span> Attendance Report </h2>
+                <p><span id="branchbatchspan"></span><span id="daterangespan"></span></p>
+                <p id="abbreviations" style="float: right;display:none;"><span> <b>A:</b> Absent	<b>WO:</b> Week Off	<b>H:</b> Holiday<b>NA:</b> Not Available	</span></p>
+
+
+      <div class="row" id="reportAjax">
+        <div class="col-md-12">
+          <!-- Custom Tabs -->
+          <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#detailed_report_tab" data-toggle="tab">Detailed Report</a></li>
+              <li><a href="#summary_report_tab" data-toggle="tab">Summary</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="detailed_report_tab">
+                <b>Choose Shifttime and date range!!!</b>
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="summary_report_tab">
+                <b>Choose Shifttime and date range!!!</b>
+              </div>
+              <!-- /.tab-pane -->
+            </div>
+            <!-- /.tab-content -->
+          </div>
+          <!-- nav-tabs-custom -->
+        </div>
+        <!-- /.col -->
+
+        </div>
+      <!-- /.row -->
+      <!-- END CUSTOM TABS -->
+
+
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+    today=new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+    if(dd<10)
+    {
+    dd='0'+dd;
+    }
+    if(mm<10)
+    {
+    mm='0'+mm;
+    }
+    todaydate = yyyy+'-'+mm+'-'+dd;
+    //usertypes=$('#usertypes').val();
+    //fetchData(todaydate,todaydate,'',usertypes,'','',1);
+    $('.datepicker').datepicker({
+    format: 'yyyy-mm-dd',
+    endDate: '+0d'});
+
+    var selectedShifttime=$('#selshifttime').val();
+      $.ajax({
+        url: "/hierarchy/ajax_load_shifttime",
+        data:{selshifttime:selectedShifttime},
+        success: function (data) {
+          $("#selshifttime").html(data);
+          //alert(data);
+        }
+      });
+
+    $('.select2').select2();
+});
+
+$('#getdatedata').click(function(){
+fdate=$('#searchdate1').val();
+tdate=$('#searchdate2').val();
+usertypes=$('#usertypes').val();
+//selbranch=$('#selbranch').val();
+selshifttime=$('#selshifttime').val();
+selbatch=$('#selbatch').val();
+selemployee=$('#selemployee').val();
+
+fetchData(fdate,tdate,usertypes,selshifttime,selbatch,selemployee);
+});
+
+
+
+function fetchData(fromdate,todate,usertypes,selshifttime,selbatch,selemployee){
+//alert(selemployee);
+$('#reportAjax').html('<img src="/static/admin/dist/img/loading.gif" style="margin: 0% 0% 0% 38%;" class="user-image" width="150px;" alt="Radiant Loader">');
+$.ajax(
+    {
+        type:"GET",
+        url: "/attendance/attendancereport/ajax_load_reports",
+        data:{
+                 fromdate: fromdate,
+                 todate: todate,
+                 utype:usertypes,
+                 selshifttime:selshifttime,
+                 selbatch:selbatch,
+                 selemployee:selemployee,
+        },
+        success: function( data )
+        {
+        setTimeout(function(){ $('#reportAjax').html(data); }, 600);
+        $('#utypespan').html(usertypes)
+        if(usertypes=='Employee')
+         $("#branchbatchspan").html('<b>Shifttime :</b>  '+$("#selshifttime option:selected").text()+' ');
+         if(usertypes=='Student')
+         $("#branchbatchspan").html('<b>Branch :</b>  '+$("#selbranch option:selected").text()+'<b> Batch :</b>  '+$("#selbatch option:selected").text());
+         $('#abbreviations').show();
+            var fdate=formatdate($("#searchdate1").val())
+            var tdate=formatdate($("#searchdate2").val())
+          $("#daterangespan").html(' <b>From :</b> '+fdate+'  <b>To :</b> '+tdate);
+            //('#summary_report_tab').html(data);
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+        $('#reportAjax').html('<b style="color: #e61515; margin:0% 0% 0% 25%">  Something unexpected happend!!!  Please cross check selected items.</b>');
+    }
+     })
+}
+
+
+
+
+function formatdate(fdt){
+var d = new Date(fdt);
+var curr_date = d.getDate();
+var curr_year = d.getFullYear();
+var month = new Array();
+month[0] = "Jan";
+month[1] = "Feb";
+month[2] = "Mar";
+month[3] = "Apr";
+month[4] = "May";
+month[5] = "Jun";
+month[6] = "Jul";
+month[7] = "Aug";
+month[8] = "Sep";
+month[9] = "Oct";
+month[10] = "Nov";
+month[11] = "Dec";
+if(curr_date<10)
+curr_date='0'+curr_date
+var tmpDate=curr_date + " " + month[d.getMonth()] + " " + curr_year;
+return tmpDate
+}
+function setEmployee(utype){
+if(utype=='Employee'){
+$('#selemployeediv').show();
+
+
+var selectedBranch=$('#selshifttime').val();
+      $.ajax({
+        url: "/attendee/employee/ajax_branch_employees",
+        data:{bof:selectedBranch},
+        success: function (data) {
+          $("#selemployee").html(data);
+          //alert(data);
+        }
+      });
+
+
+}
+else{
+$('#selemployeediv').show();
+$('#selbatchdiv').hide();
+
+}
+return false;
+}
+function exportdetailedreport(){
+fdate=$('#searchdate1').val();
+tdate=$('#searchdate2').val();
+usertypes=$('#usertypes').val();
+//selbranch=$('#selbranch').val();
+selshifttime=$('#selshifttime').val();
+selbatch=$('#selbatch').val();
+urlStr='fromdate='+fdate+'&todate='+tdate+'&utype='+usertypes+'&selshifttime='+selshifttime+'&selbatch='+selbatch;
+window.location.href='/attendance/ajax_exportdetails?'+urlStr;
+}
+function exportsummarydreport(){
+ $.ajax({
+        url: "/attendance/ajax_exportsummary",
+        success: function (data) {
+          //alert(data);
+        }
+      });
+}
+</script>
+{% endblock %}

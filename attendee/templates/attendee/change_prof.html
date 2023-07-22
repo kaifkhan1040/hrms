@@ -1,0 +1,126 @@
+{% extends 'layouts/default/logged.html' %}
+{% load bootstrap4 %}
+{% load i18n %}
+{% block content %}
+ <!-- Content Header (Page header) -->
+
+
+
+
+
+<html>
+<head>
+    <title>Chane Profile</title>
+
+</head>
+
+<body>
+<!--stream vidoe via webcame -->
+<center>
+    <button type="button" class="btn-lg btn-outline-info" id='start'>Enable Webcam </button>
+    <h3 data-bgColor="Black">Click on the above button to access your webcam and then capture your image. Thank you!</h3>
+    <div class="container-fluid mt-2">
+        <video id="video" width="640" height="480"  playsinline autoplay></video>
+        <h4>Please click on given button and Capture Your Image.</h4>
+
+       <!-- <button type="button" data-toggle="modal" data-target="#image_model" class="btn btn-lg btn-dark" id="snap">Punch In</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Punch Out</button>-->
+
+
+     <!--<button type="button" data-toggle="modal" data-target="#image_model" id="0" class="snap">Punch In</button><br><br>
+     <button type="button" data-toggle="modal" data-target="#image_model" id="1" class="snap">Punch Out</button>
+-->
+        <button type="button" id="snap" class="snap">Capture Image</button>
+    </div>
+</center>
+
+
+
+<!-- webcame video snapshot -->
+<canvas id="canvas" width="640" height="480"></canvas>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoDC05K-AXhYcIk3Op_UMIqXZd1Wh8Ktk&libraries=places"></script>
+<script>
+
+// Grab elements, create settings, etc.
+
+var video = document.getElementById('video');
+
+// Elements for taking the snapshot
+
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+canvas.style.display="none";
+
+document.getElementById('start').addEventListener("click", function() {
+    // Get access to the camera!
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({
+            video: true
+        }).then(function(stream) {
+            //video.src = window.URL.createObjectURL(stream);
+            video.srcObject = stream;
+            video.play();
+        });
+    }
+
+    $('#snap').fadeIn();
+    // Trigger photo take
+    //document.getElementById("snap").addEventListener("click", function() {
+        //var d = context.drawImage(video, 0, 0, 640, 480);
+        //var dataURL = canvas.toDataURL()
+
+        $(".snap").click(function(e) {
+
+            e.preventDefault();
+
+
+            var d = context.drawImage(video, 0, 0, 640, 480);
+            //var data_pixel = canvas.getContext('2d').getImageData(0, 0, 640, 480).data;
+            var dataURL = canvas.toDataURL()
+            //let $form = $(".image_submit_form");
+            //let form_data = new FormData($form[0]);
+            var csrftoken = getCookie('csrftoken');
+
+
+            $('#snap').html('<img src="/static/admin/dist/img/loading.gif" style="margin-top: 38% 0% 0% 0%;" class="user-image" width="80px;" id="img" alt="Radiant Loader">').show();
+            $.ajax({
+                url: "../img_submit/",//$form.attr('action'),
+                type: "post",
+                headers: {'X-CSRFToken': csrftoken},
+                dataType: 'json',
+                //data: "'image': JSON.stringify(data_pixel)",
+                dataType:'json',
+                data: { imageBase64:JSON.stringify(dataURL)},
+                success: function (response) {
+                  alert(response.message)
+                  window.location.href = "/accounts/dashboard/";
+                $('#img').hide();
+                }
+
+
+            }).done(function() {
+                console.log('sent');
+            });
+        });
+});
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+</script>
+
+</body>
+</html>
+{% endblock %}

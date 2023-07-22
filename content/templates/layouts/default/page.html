@@ -1,0 +1,133 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RadiantHRMS</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <link rel="icon" href="{% static 'admin/dist/img/fevicon.png' %}" type="image/png" sizes="16x16">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="{% static 'admin/bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'admin/bower_components/font-awesome/css/font-awesome.min.css' %}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="{% static 'admin/bower_components/Ionicons/css/ionicons.min.css' %}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static 'admin/dist/css/AdminLTE.min.css' %}">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="{% static 'admin/dist/css/skins/_all-skins.min.css' %}">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- jQuery 3 -->
+<script src="{% static 'admin/bower_components/jquery/dist/jquery.min.js' %}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="{% static 'admin/bower_components/jquery-ui/jquery-ui.min.js' %}"></script>
+  <style>
+
+	  
+	.formp h4 {
+    font-size: 18px;
+}
+
+.mgTp{
+    margin-top:6%;
+}
+
+.topBtn{
+    margin-top:15px;
+}
+
+
+html, body {
+    height: 0%!important;
+}  
+	  
+	  
+	  .formp {
+  background: #fff;
+    width: 56%!important;
+    position: inherit;
+    /* padding: 2% 0% 3% 7%; */
+    padding: 34px!important;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0) 0px 1px 2px 0px;
+    border: 1px solid #dadce0;
+   
+}
+	  
+	  
+  .formp ul{padding: 0;margin: 21px -11px 46px;}
+  .formp ul li{ float: left; display: block;}
+  .formp ul li a{ text-decoration: none; padding: 12px 8px; color: #0580de;}
+	  
+	.formp1 {
+    background: #fff;
+    width: 56%!important;
+    position: inherit;
+    /* padding: 2% 0% 3% 7%; */
+    padding: 34px!important;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0) 0px 1px 2px 0px;
+	border: 1px solid #dadce0;}
+   
+	  
+	.formp1 ul{padding: 0;margin: 21px 0px 21px;}
+	.formp1 ul li{ float: none; display: block; padding: 3px 0px;}
+
+	  
+	  
+	  .btn-login{background: #203391;
+    border: none;
+    padding: 8px 24px;
+    font-size: 16px;
+    color: white;}	 
+	  
+	  
+	  /******index******/
+	  
+	  
+	  
+	   /******index End******/
+	  /*logo*/
+    .bg-login {
+       background: #232F3E;
+       width: 100%;
+       padding: 25px 0px 25px 0px;
+       text-align: center !important;
+    }
+	  
+    </style>
+</head>
+
+<body style="background: #f9f9f9;">
+	
+	
+<div class="container">
+<div class="row mgTp">
+<div class="col-sm-12 ">
+{% block content %}
+{% endblock %}
+</div>
+</div>
+</div>
+	
+	
+	
+
+<div class="wrapper">
+<!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+</body>
+</html>

@@ -1,0 +1,806 @@
+{% extends 'layouts/default/logged.html' %}
+{% load bootstrap4 %}
+{% load i18n %}
+{% block content %}
+{% load static %}
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        <small></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Attendance Report</a></li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+
+<style>
+.form-inline .form-group { margin-right:10px; }
+.glyphicon { margin-right:5px; }
+	
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #203391;
+    border-color: #203391;
+}
+	.panel-heading a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #ffffff!important;
+}
+	
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}	
+	
+	.update-butt .bg-green, .callout.callout-success, .alert-success, .label-success, .modal-success .modal-body {
+    background-color: #ffffff !important;
+    color: #0ba004!important;
+    margin-top: 25px!important;
+}
+
+/*.panel-heading a:hover, a:active, a:focus {
+   
+    color: #ea2323!important;
+}*/
+
+a.quals:hover, a.quals:active, a.quals:focus{
+    color: #72afd2!important;
+}
+	
+</style>
+<section>
+<div class="container" style="width:1100px;">
+    <div class="row">    
+        <div class="col-md-12">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading tab" >
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-file">
+                            </span>Personal Details <span style="float: right;color: #ffffff;font-size: 13px;font-weight: 400;">Non - Editable fields are shown as shaded and can be updated by HR / Admin Only</span></a>
+
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <form id="pdform" name="pdform">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Organisation</label>
+                                        <input type="text" name="organisation_name" id="organisation_name" readonly value="{{userDetails.branch.organisation.name}}" class="form-control" placeholder="Organisation Name" required />
+                                        <input type="hidden" name="organisation_id" id="organisation_id" readonly value="{{userDetails.branch.organisation.id}}"/>
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Branch</label>
+                                        <input type="text" name="branch_name" id="branch_name" readonly value="{{userDetails.branch.name}}" class="form-control" placeholder="Branch" required />
+                                        <input type="hidden" name="branch_id" id="branch_id" readonly value="{{userDetails.branch.id}}"/>
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Date Of Joining</label>
+                                        <input type="text" name="doj" id="doj" readonly value="{{userDetails.doj}}" class="form-control" placeholder="Date Of Joining" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Official Email Id</label>
+                                        <input type="text" name="email"  id="email" readonly value="{{userDetails.email}}" class="form-control" placeholder="Official Email Id" required />
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Biometric ID</label>
+                                        <input type="text" name="biometric_id" id="biometric_id" readonly value="{{userDetails.biometric_id}}" class="form-control" placeholder="Biometric ID" required />
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>PAN No.</label>
+                                        <input type="text" name="pan_no"  id="pan_no"  readonly value="{{userDetails.pan_no}}" class="form-control" placeholder="PAN No." required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>AADHAR No.</label>
+                                        <input type="text" name="aadhar_no" id="aadhar_no" readonly value="{{userDetails.aadhar_no}}" class="form-control" placeholder="AADHAR No." required />
+                                    </div>
+                                </div>
+
+
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Department</label>
+                                        <input type="text" name="department"  id="department" readonly value="{{userDetails.department.name}}" class="form-control" placeholder="Department" required />
+                                        <input type="hidden" name="department_id"  id="department_id"  value="{{userDetails.department.id}}"/>
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Designation</label>
+                                        <input type="text" name="designation"  id="designation" readonly value="{{userDetails.designation.name}}" class="form-control" placeholder="Designation" required />
+                                        <input type="hidden" name="designation_id"  id="designation_id"  value="{{userDetails.designation.id}}"/>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" name="first_name" id="first_name" readonly value="{{userDetails.first_name}}" class="form-control" placeholder="First Name" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" name="last_name"  id="last_name" readonly value="{{userDetails.last_name}}" class="form-control" placeholder="Last Name" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Marital Status</label>
+                                    <select name="marital_status"  id="marital_status" class="form-control">
+                                        <option {% if userDetails.marital_status == 1 %} selected {% endif %}  value="1">Married</option>
+                                         <option {% if userDetails.marital_status == 0 %} selected {% endif %}  value="0">Unmarried</option>
+
+                                    </select>
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <select class="form-control" name="country_id" id="country_id">
+                                            {% for k in countrylist %}
+                                            <option {% if userDetails.country.id == k.id %} selected {% endif %} value="{{k.id}}">{{k.name}}</option>
+                                            {% endfor %}
+                                        </select>
+                                       </div>
+                                </div>
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                         <select class="form-control" name="state_id" id="state_id">
+                                            {% for sl in statelist %}
+                                            <option {% if userDetails.state.id == sl.id %} selected {% endif %} value="{{sl.id}}">{{sl.name}}</option>
+                                            {% endfor %}
+                                
+                                        </select>
+                                     </div>
+                                </div>
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <select class="form-control" name="city_id"  id="city_id">
+                                            {% for cl in citylist %}
+                                            <option {% if userDetails.city.id == cl.id %} selected {% endif %} value="{{cl.id}}">{{cl.name}}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Bank</label>
+                                        <select class="form-control" name="bank_id"  id="bank_id">
+                                            {% for bl in banklist %}
+                                            <option {% if userDetails.bank.id == bl.id %} selected {% endif %} value="{{bl.id}}">{{bl.name}}</option>
+                                            {% endfor %}
+                                        </select>
+                                            </div>
+                                </div>
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Category</label>
+                                         <select class="form-control" name="category_id"  id="category_id">
+                                            {% for ctl in categorylist %}
+                                            <option {% if userDetails.category.id == ctl.id %} selected {% endif %} value="{{ctl.id}}">{{ctl.name}}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Religion</label>
+                                        <select class="form-control" name="religion_id" id="religion_id">
+                                            {% for rl in religionlist %}
+                                            <option {% if userDetails.religion.id == rl.id %} selected {% endif %} value="{{rl.id}}">{{rl.name}}</option>
+                                            {% endfor %}
+                                        </select>
+                                         </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Gender</label>
+	                                    <select name="gender"  id="gender" class="form-control">
+	                                        <option {% if userDetails.gender == 1 %} selected {% endif %}  value="1">Male</option>
+	                                         <option {% if userDetails.gender == 0 %} selected {% endif %}  value="0">Female</option>
+
+	                                    </select>
+                                    </div>
+                                </div>
+
+                              
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Personal Email</label>
+                                        <input name="personal_email" id="personal_email" type="text" class="form-control" placeholder="Personal Email Id" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Date Of Birth</label>
+                                        <input name="dob"  id="dob"  type="date" value="{{userDetails.dob}}" class="form-control datepicker" placeholder="Date Of Birth" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Phone</label>
+                                        <input name="phone" id="phone" type="text" value="{% if userDetails.phone != 'None'%}{{userDetails.phone}}{% endif %}" class="form-control" placeholder="Phone" maxlength="10" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Mobile</label>
+                                        <input name="mobile" id="mobile" type="text" value="{% if userDetails.mobile != 'None'%}{{userDetails.mobile}}{% endif %}" class="form-control" placeholder="Mobile" maxlength="10" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Adddress 1</label>
+                                        <input name="address1" id="address1" type="text" value="{% if userDetails.address1 != 'None'%}{{userDetails.address1}}{% endif %}" class="form-control" placeholder="Address 1" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Adddress 2</label>
+                                        <input name="address2"  id="address2"  type="text" value="{% if userDetails.address2 != 'None'%}{{userDetails.address2}}{% endif %}" class="form-control" placeholder="Address 2" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>District</label>
+                                        <input name="district" id="district" type="text" value="{% if userDetails.district != 'None'%}{{userDetails.district}}{% endif %}" class="form-control" placeholder="District" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pincode</label>
+                                        <input type="text"  name="pincode" id="pincode" value="{% if userDetails.pincode != 'None'%}{{userDetails.pincode}}{% endif %}" class="form-control" placeholder="Pincode" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Bank Account No</label>
+                                        <input type="text" name="bank_account_no" id="bank_account_no"  value="{% if userDetails.bank_account_no != 'None'%}{{userDetails.bank_account_no}}{% endif %}" class="form-control" placeholder="Bank Account No." required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                         <label>IFSC Code</label>
+                                        <input type="text" name="ifsc_code" id="ifsc_code" value="{% if userDetails.ifsc_code != 'None'%}{{userDetails.ifsc_code}}{% endif %}" class="form-control" placeholder="IFSC Code" required />
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Bank Account Holder Name</label>
+                                        <input type="text" name="bank_accountholder_name"  id="bank_accountholder_name" value="{% if userDetails.bank_accountholder_name != 'None'%}{{userDetails.bank_accountholder_name}}{% endif %}" class="form-control" placeholder="Bank Account Holder Name" required />
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Bank Branch</label>
+                                        <input type="text"  name="bank_branch"  id="bank_branch"  value="{% if userDetails.bank_branch != 'None'%}{{userDetails.bank_branch}}{% endif %}" class="form-control" placeholder="Bank Branch" required />
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                   <form class="form " role="form">
+                                        <div class="form-group">
+                                            <button  onclick="return savepersonaldetails();" type="submit" class="btn btn-success btn-sm">
+                                                <span class="glyphicon glyphicon-floppy-disk"></span>Save</button>
+                                            <div id="ajaxloadersavepersonaldetails"></div>
+                                        </div>
+                                        </form>
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-book">
+                            </span>Qualification Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div id="qualification_div" class="row">
+                            {% if qualification_documents is not None %}
+                             {% for k in qualification_documents %}                          
+                                <div class="row" data-documentType="{{k.document_of}}">
+                                    <div class="col-md-3">
+                                        {% if k.document_of == "10" %}
+                                            10th
+                                        {% elif k.document_of == "12" %}
+                                            12th
+                                        {% elif k.document_of == "13" %}
+                                            Graduation
+                                        {% elif k.document_of == "14" %}
+                                            Post Graduation
+                                        {% else %}
+                                            Others
+                                        {% endif %}   
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{ k.description}}
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="{% static 'data/qualification/' %}{{k.document}}" target="_blank" class="quals">Download</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="javaScript:void(0);" onclick="deleteDocument(this,{{k.id}})" data-id="{{ k.id }}" class="quals"><i class="fa fa-remove"></i></a>
+                                    </div>
+                                </div>
+                             {% endfor %}
+                            {% endif %}
+                            </div>
+                            <form id="qlform" name="qlform" role="form" enctype="multipart/form-data">
+                        	{% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select class="form-control" name="qualification_type"  id="qualification_type">
+                                            <option value="10">10th</option>
+                                            <option value="12">12th</option>
+                                            <option value="13">Graduation</option>
+                                            <option value="14">Post Graduation</option>
+                                            <option value="15">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" name="qualification_desc" id="qualification_desc" placeholder="Description" class="form-control"/>
+                                        <div class="err" style="color:red"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="file" name="qualification_doc" id="qualification_doc" class="form-control"/>
+                                        <div class="err" style="color:red"></div>
+                                    </div>
+                                </div>
+
+                                 <div class="col-md-4">
+                                    <div class="form-group">
+
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div onclick="return validateSaveQualification();" class="form-group">
+                                            <a href="#" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-floppy-disk">
+                                            </span>Save</a>
+                                            <div id="ajaxloadersavequalificationdetails"></div>
+                                        </div>
+                                   </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-star">
+                            </span>Experience Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row" id="experience_data">
+                                {% for key, value in userdata.items %}
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="{% static 'data/experience/'%}{{userId}}/{{key}}" target="_blank" class="quals">{{value}}</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="javaScript:void(0);" data-id="{{key}}" class="quals" onclick="removeExperience(this,'{{key}}','{{userId}}')">
+                                            <i class="fa fa-remove"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                {% endfor %} 
+                            </div>
+							<form id="expform" name="expform" role="form">
+                                <div class="row">
+                                    <div id="exp_details">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <select class="form-control" name="experience_yr"  id="experience_yr">
+                                                    {% for i in context.loop_times %}
+                                                        {% if experience != None %}
+                                                            <option {% if experience == i %} selected {% endif %} value="{{ i }}">{{ i }}</option>
+                                                        {% else %}
+                                                            <option value="0">{{ i }}</option>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input type="file" id="experience_file"  data-csrf-token="{{ csrf_token }}" class="form-control" multiple>
+                                                <div class="err" style="color:red"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div>
+                               
+                                    <!-- <div class="col-md-4">
+                                    <a style="display: block;width: 115px;height: 25px;background: #0ba004;padding: 3px 2px 2px 2px;text-align: center;margin: 0% 0% 1% 53%;border-radius: 5px;color: white;font-weight: bold;" href="Javascript:void(0);" id="addMore">Add More</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                    <a style="display: block;width: 115px;height: 25px;background: #e00b1c;padding: 3px 2px 2px 2px;text-align: center;margin: 0% 0% 1% 53%;border-radius: 5px;color: white;font-weight: bold;" href="Javascript:void(0);" id="removeone">Remove One</a>
+                                    </div> -->
+
+                                <div class="col-md-12">
+                                    <div  onclick="return saveexperiencedetails();" class="form-group">
+                                            <a href="#" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-floppy-disk">
+                                            </span>Save</a>
+                                            <div id="ajaxloadersaveexperiencedetails"></div>
+                                        </div>
+                                    </div>
+                           
+                                <input type="hidden" value="1" name="countervalue" id="countervalue">
+                            </form>
+                        
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <!-- /.content -->
+<script>
+    $('#addMore').click(function(){
+    cval = $('#countervalue').val();
+    cval=parseInt(cval)+1;
+    $('#exp_details').append('<div id=qaulification_div_'+cval+' class="row"><div class="col-md-6"><div class="form-group"><input type="text" class="form-control" placeholder="Title / Description" required /></div></div><div class="col-md-3"><div class="form-group"><input type="file" class="form-control"/></div></div><div class="col-md-3"></div></div>');
+    $('#countervalue').val(cval);
+    });
+
+    $('#removeone').click(function(){
+    cval = $('#countervalue').val();
+    $('#qaulification_div_'+cval).remove();
+    $('#countervalue').val(parseInt(cval)-1);
+    });
+
+    function savepersonaldetails(){
+    $('#ajaxloadersavepersonaldetails').html('<img src="/static/admin/dist/img/loading.gif" style="margin: 0% 0% 0% 38%;" class="user-image" width="45px;" alt="Radiant Loader">');
+
+
+    var form_data = {}
+    form_data['marital_status'] = $('#marital_status').val();
+    form_data['country_id'] = $('#country_id').val();
+    form_data['state_id'] = $('#state_id').val();
+    form_data['city_id'] = $('#city_id').val();
+    form_data['bank_id'] = $('#bank_id').val();
+    form_data['category_id'] = $('#category_id').val();
+    form_data['religion_id'] = $('#religion_id').val();
+    form_data['personal_email'] = $('#personal_email').val();
+    form_data['dob'] = $('#dob').val();
+    form_data['phone'] = $('#phone').val();
+    form_data['mobile'] = $('#mobile').val();
+    form_data['address1'] = $('#address1').val();
+    form_data['address2'] = $('#address2').val();
+    form_data['district'] = $('#district').val();
+    form_data['pincode'] = $('#pincode').val();
+    form_data['bank_account_no'] = $('#bank_account_no').val();
+    form_data['ifsc_code'] = $('#ifsc_code').val();
+    form_data['bank_accountholder_name'] = $('#bank_accountholder_name').val();
+    form_data['bank_branch'] = $('#bank_branch').val();
+    form_data['gender'] = $('#gender').val();
+
+
+    $.ajax({
+        type:"POST",
+        url: "/attendee/savepersonaldetails/",
+        contentType: "application/x-www-form-urlencoded;charset=utf-8",
+        data:{formdata:JSON.stringify(form_data)},
+        //dataType:"json",
+        success: function( data )
+        {
+        $('#ajaxloadersavepersonaldetails').html('<p class="alert-sm  alert-success">Updated Successfully !!</p>');
+
+        }
+      });
+    return false;
+    }
+
+    function validateSaveQualification(){
+
+        var desc = $('#qualification_desc').val();
+        var file_data = $('#qualification_doc').val();
+        var ext = $('#qualification_doc').val().split('.').pop().toLowerCase();
+
+
+        if(desc!="" && file_data!=""){
+            if($.inArray(ext, ['png','jpg','jpeg','pjpeg','gif','pdf']) == -1) 
+                setTimeout(function(){ 
+                        $('#qualification_doc').next('.err').html("Only .png,.jpg,.jpeg,.gif,.pdf.")
+                    }, 1000);
+            else
+                savequalificationdetails();
+        }else{
+            if(desc=="")
+                setTimeout(function(){ 
+                    $('#qualification_desc').next('.err').html("Please enter description.")
+                }, 1000);
+                
+            if(file_data=="")
+                setTimeout(function(){ 
+                    $('#qualification_doc').next('.err').html("Please choose file.")
+                }, 1000);
+
+            if(desc=="" && file_data!=""){
+                if($.inArray(ext, ['png','jpg','jpeg','pjpeg','gif','pdf']) == -1) 
+                    setTimeout(function(){ 
+                        $('#qualification_doc').next('.err').html("Only .png,.jpg,.jpeg,.gif,.pdf supported.")
+                    }, 1000);
+                
+            }
+                
+        }
+        return false;
+    }
+
+    function savequalificationdetails(){
+	    $('#ajaxloadersavequalificationdetails').html('<img src="/static/admin/dist/img/loading.gif" style="margin: 0% 0% 0% 38%;" class="user-image" width="45px;" alt="Radiant Loader">');
+	    event.preventDefault();
+	   	var formData = new FormData();
+	    var str = "";
+	   	//console.log('{{csrf_token}}');
+		formData.append('qualification_doc', $('#qualification_doc')[0].files[0]);
+		formData.append('qualification_type',$('#qualification_type').val());
+		formData.append('qualification_desc', $('#qualification_desc').val());
+		formData.append('csrfmiddlewaretoken', '{{csrf_token}}');
+		
+		$.ajax({
+		   url : '/attendee/savequalificationdetails/',
+		   type : 'POST',
+		   data : formData,
+		   processData: false,
+		   contentType: false,
+		   enctype: 'multipart/form-data',
+		   dataType: 'json',
+		   success : function(response) {
+	
+                if(response.status == 200){
+                    //location.reload();
+                    if(response.doc_of == 10)
+                        doc_of = '10th';
+                    else if(response.doc_of == 12)
+                        doc_of = '12th';
+                    else if(response.doc_of == 13)
+                        doc_of = 'Graduation';
+                    else if(response.doc_of == 14)
+                        doc_of = 'Post Graduation';
+                    else
+                        doc_of = 'Others';
+
+                    var str = '<div class="row" data-documentType="'+response.doc_of+'"><div class="col-md-3">'+doc_of+'</div><div class="col-md-3">'+response.doc_desc+'</div><div class="col-md-3"><a href="/static/data/qualification/'+response.link+'" target="_blank" class="quals">Download</a></div><div class="col-md-3"><a href="javaScript:void(0);" onclick="deleteDocument(this,'+response.token+')" data-id="'+response.token+'" class="quals"><i class="fa fa-remove"></i></a></div></div>';
+                        $('#qualification_div').append(str);
+                        $("#qualification_type option:selected").attr('disabled','disabled')
+                        $('#qualification_desc').val('');
+                        $('#qualification_doc').val(''); 
+                }
+
+                setTimeout(function(){ 
+                    $('#ajaxloadersavequalificationdetails').html('<p class="alert-sm alert-success">Updated Successfully !!</p>') 
+                }, 1000);
+		   }
+		});
+	   
+	    return false;
+    }
+
+    function deleteDocument(ele,qual_id){
+        //console.log(qual_id);
+        var confirm_box = confirm("Are you sure you want to delete?");
+        if(confirm_box)
+            $.ajax({
+                type:"POST",
+                url: "/attendee/deletequalification/",
+                data:{'qual_id':qual_id},
+                dataType: 'json',
+                success: function(response)
+                {
+                    if(response.status == 200){
+                        //location.reload();
+                        $(ele).parent().parent().remove();
+                        $("#qualification_type option[value='"+response.doc_of+"']").prop('disabled', false)
+
+                    }
+                    setTimeout(function(){ 
+                        $('#ajaxloadersavequalificationdetails').html('<p class="alert-sm alert-success">Deleted Successfully !!</p>') 
+                    }, 1000);
+                }
+              });
+        return false;
+    }
+
+    function saveexperiencedetails(){
+
+        if($("#experience_file").val()==""){
+                $("#experience_file").next('.err').html("Please choose a file");
+        }else{
+            var formData = new FormData();
+            var fileSelect = document.getElementById('experience_file');
+            var files = fileSelect.files;
+
+            for(var i = 0; i < files.length; i++){
+                var file = files[i];
+                var ext = (file.name).split('.').pop().toLowerCase();
+                if($.inArray(ext, ['png','jpg','jpeg','pjpeg','gif','pdf']) == -1){ 
+                    $('#experience_file').next('.err').html("Only .png,.jpg,.jpeg,.gif,.pdf.")
+                    return false;
+                }
+                //formData.append('myfiles[]', file, file.name);
+                formData.append("file", file);
+            }
+
+            $('#ajaxloadersaveexperiencedetails').html('<img src="/static/admin/dist/img/loading.gif" style="margin: 0% 0% 0% 38%;" class="user-image" width="45px;" alt="Radiant Loader">');
+
+            formData.append('csrfmiddlewaretoken', '{{csrf_token}}');
+            formData.append('experience', $('#experience_yr').val());
+
+            $.ajax({
+                url: "/attendee/saveexperiencedetails/",
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                type: 'POST',
+                dataType: 'json',
+                beforeSend: function(){
+                  // before send, display loading, etc...
+                },
+                success: function(response){
+                    var obj_len = Object.keys(response.doc).length
+                    var str = "";
+                    $.each(response.doc,function(key,value ) {
+                      //console.log( key + ": " + value );
+                      str +='<div class="row"><div class="col-md-6"><a href="/static/data/experience/'+response.user_id+'/'+key+'" target="_blank" class="quals">'+value+'</a></div><div class="col-md-6"><a href="javaScript:void(0);" onclick="removeExperience(this,'+key+','+response.user_id+')" data-id="'+key+'" class="quals"><i class="fa fa-remove"></i></a></div></div>';
+                    });
+
+                    $('#experience_data').append(str);
+                    setTimeout(function(){ 
+                        $('#ajaxloadersaveexperiencedetails').html('<p class="alert-sm alert-success">Experience updated !!</p>') 
+                    }, 1000);
+                },
+                error: function(){
+                  // error handling... 
+                }
+              });
+            
+        }
+        return false;
+    }
+
+    function removeExperience(ele,image,user_id){
+        var confirm_box = confirm("Are you sure you want to delete?");
+        if(confirm_box)
+            $.ajax({
+                type:"POST",
+                url: "/attendee/deleteexperiencedoc/",
+                data:{'img':image,'user_id':user_id},
+                dataType: 'json',
+                success: function(response)
+                {
+                    if(response.status == 200){
+                        //location.reload();
+                        $(ele).parent().parent().remove();
+                        //$("#qualification_type option[value='"+response.doc_of+"']").prop('disabled', false)
+
+                    }
+                    setTimeout(function(){ 
+                        $('#ajaxloadersavequalificationdetails').html('<p class="alert-sm alert-success">Deleted Successfully !!</p>') 
+                    }, 1000);
+                }
+              });
+        return false;
+    }
+
+    // Phone validation
+    $('#phone').keyup(function () { 
+        this.value = this.value.replace(/[^0-9\.]/g,'');
+    }); 
+    $('#mobile').keyup(function () { 
+        this.value = this.value.replace(/[^0-9\.]/g,'');
+    }); 
+
+    //state city load
+    $('#state_id').on('change',function(){
+        loadCity($(this).val())
+    })
+
+    $(document).ready(function(){
+    	loadCity($('#state_id').val())
+
+        $('#qualification_div').children('.row').each(function(){
+            var doc_val = $(this).attr("data-documenttype");
+            $("#qualification_type option[value='"+doc_val+"']").prop('disabled', true)
+        })
+    })
+
+    var state_id='';
+    function loadCity(state_id){
+    	var state_id = 
+        $.ajax({
+            type:"POST",
+            url: "/attendee/getCityAjax/",
+            data:{'state_id':state_id},
+            dataType: 'json',
+            success: function(response)
+            {
+                var city = JSON.parse(response.data);
+                var opt='';
+                $.each(city, function(idx, obj) {
+                    opt += '<option value="'+obj.pk+'">'+obj.fields.name+' </option>';
+                });
+                $('#city_id').html(opt);
+                
+            }
+          });
+    }
+
+</script>
+{% endblock %}

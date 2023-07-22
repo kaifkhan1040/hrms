@@ -1,0 +1,103 @@
+<div class="col-md-12">
+   <!-- Custom Tabs -->
+   <div class="nav-tabs-custom">
+      <ul class="nav nav-tabs">
+         <li class="active"><a href="#detailed_report_tab" data-toggle="tab" aria-expanded="true">Detailed Report</a></li>
+         <li class=""><a href="#summary_report_tab" data-toggle="tab" aria-expanded="false">Summary</a></li>
+          <li class=""><a href="#summary_report_analytics" data-toggle="tab" aria-expanded="false">Analytics</a></li>
+      </ul>
+      <div class="tab-content">
+         <div class="tab-pane active" id="detailed_report_tab">
+            <div class="box-body table-responsive">
+               <div style="color:#FF0000;"></div>
+               <div id="dvData">
+                   <a class="btn btn-sm btn-success" onclick="return exportdetailedreport();">Export</a>
+                 <table id="mytable" class="table table-responsive ">
+                     <tbody>
+                        <tr>
+                           <th width="200px;">Candidate Name</th>
+                            {% for dlist in datelist %}
+                            <th width="200px;">{{dlist}}</th>
+                            {% endfor %}
+                        </tr>
+                        {% for person, attendances in userlist.items %}
+                            <tr>
+                                <td width="200px;">{{person}}</td>
+                                {% for thing in attendances %}
+                                {% for dt, att in thing.items %}
+                                {% if 'Short' in att%}
+                                {% with cl='short' %}
+                                <td class="{{ cl }}" width="200px;">{{att}}</td>
+                                {% endwith %}
+                                {% elif 'Extra' in att%}
+                                {% with cl='plus' %}
+                                <td class="{{ cl }}" width="200px;">{{att}}</td>
+                                {% endwith %}
+                                {% else %}
+                                <td width="200px;">{{att}}</td>
+                                {% endif %}
+
+                                {% endfor %}
+                        {% endfor %}
+                        </tr>
+                        <tr>
+                           <td colspan="31"></td>
+                        </tr>
+                        {% endfor %}
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <!-- /.tab-pane -->
+         <div class="tab-pane" id="summary_report_tab">
+            <div class="box-body">
+               <div id="dvData1">
+                  <table class="table table-bordered">
+                     <tbody>
+                        <tr>
+                           <td>Date</td>
+                           <td>Total Present</td>
+                           <td>Total Absent</td>
+                           <td>Total Candidate</td>
+                        </tr>
+                      {% for dt,ls in summarylist.items %}
+                        {% if ls %}
+                        <tr>
+                           <td>{{dt}}</td>
+                            {% for lst in ls %}
+                           <td>{{lst}}</td>
+                            {% endfor %}
+                           <td>{{totalcandidate}}</td>
+                        </tr>
+                        {% else %}
+                         <tr>
+                           <td>{{dt}}</td>
+                           <td>NA</td>
+                           <td>NA</td>
+                           <td>{{totalcandidate}}</td>
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <!-- /.tab-pane -->
+          <div class="tab-pane" id="summary_report_analytics">
+            <div class="box-body">
+               <div id="dvData2">
+                    <div class="col-sm-6"><img style="width:100%" src="{{ana1}}"></div>
+                   <div class="col-sm-6"><img style="width:100%" src="{{ana2}}"></div>
+		   <!-- <div class="col-sm-12"><img src="{{ana3}}"></div>-->
+
+               </div>
+            </div>
+         </div>
+         <!-- /.tab-pane -->
+      </div>
+      <!-- /.tab-content -->
+   </div>
+   <!-- nav-tabs-custom -->
+</div>

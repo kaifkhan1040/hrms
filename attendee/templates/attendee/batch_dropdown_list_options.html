@@ -1,0 +1,4 @@
+<option value="">---------</option>
+{% for bat in batches %}
+<option value="{{ bat.pk }}" {% if bat.pk == selectedItem %}selected="selected"{% endif %}>{{ bat.name }}</option>
+{% endfor %}

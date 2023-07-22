@@ -1,0 +1,97 @@
+{% extends 'layouts/default/logged.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1><small></small></h1>
+      <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/">Regularisation</a></li>
+        </ol>
+    </section>
+<section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Attendance Regularisation Form</h3>
+            </div>
+            <!-- /.box-header -->
+
+<form method="POST">{% csrf_token %}
+    <div class="form-group">
+         <div class="col-md-12">
+      <label>Applying For</label>
+         {{form.applying_for}}
+     </div>
+     </div>
+
+
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>InTime Hours</label>
+            {{form.starttime_hh}}
+    </div>
+    <div class="form-group col-md-6">
+      <label>InTime Minutes</label>
+           {{form.starttime_mm}}
+     </div>
+
+  </div>
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>OutTime Hours</label>
+            {{form.endtime_hh}}
+    </div>
+    <div class="form-group col-md-6">
+      <label >OutTime Minutes</label>
+           {{form.endtime_mm}}
+    </div>
+
+
+  </div>
+    <div class="form-group">
+        <div class="col-md-12">
+         <label>Date</label>
+         {{form.date}}
+        </div>
+     </div>
+     <div class="form-group">
+        <div class="col-md-14">
+         <label>Reason</label>
+         {{form.reason}}
+        </div>
+     </div>
+
+    <input  class="btn btn-primary" type="submit" value="Submit" />
+</form>
+              </div>
+          <!-- /.box -->
+      </div>
+  </div>
+</section>
+<script type="text/javascript">
+
+$(document).ready(function() {
+   var selectedwaivertype=$('#id_applying_for').val();
+      $.ajax({
+        url: "/hierarchy/ajax_load_waivertype",
+        data:{sw:selectedwaivertype},
+        success: function (data) {
+          $("#id_applying_for").html(data);
+           alert(data);
+        }
+      });
+   $('.selectbox').select2();
+});
+
+
+</script>
+
+{% endblock %}
